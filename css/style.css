@@ -1,0 +1,185 @@
+.flex,
+#about li {
+    display: flex;
+}
+
+.intro-heading,
+#about li {
+    align-items: center;
+}
+.intro-heading h3,
+#about li span,
+#about li a {
+    padding-left: 10px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+#intro {
+    margin-bottom: 50px;
+}
+
+#about li {
+    margin-bottom: 10px;
+}
+
+#about ul a {
+    color: #545454;
+    text-decoration: none;
+}
+
+#about ul li:hover {
+    color: #FF7345
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #545454;
+}
+
+h1, h2, h3 {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+    color: #40475D;
+}
+
+h1, h2, h3:not(#about h3) {
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 32px;
+}
+
+i {
+    font-size: 20px;
+}
+
+#heading {
+    background-color: #1D4E89;
+    color: #fff;
+    text-align: center;
+    padding: 15px 15px 30px;
+}
+
+header {
+    background-color: #6699C2;
+    color: #fff;
+    padding: 15px 15px 30px;
+}
+
+.heading-white {
+    color: #fff;
+}
+
+nav li,
+#about li {
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+}
+
+section {
+    padding: 15px;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-image {
+    display: block;
+    margin: -50px auto 0;
+    width: 200px;
+    border: 5px solid #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ========== Media Queries ========== */
+
+@media (min-width: 767px) {
+    nav,
+    nav ul,
+    .col-flex:not(header .col-flex) {
+        display: flex;
+    }
+
+    .col-flex {
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+    .col-50:not(header .col-50) {
+        width: 50%;
+    }    
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: 15px 5px;
+        border-bottom: 3px solid transparent;
+    }
+    nav a:hover {
+        border-bottom-color: #fff;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .name {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    header .flex {
+        display: flex;
+    }
+
+    header .col-50 {
+        width: 50%;
+    }
+
+    #intro {
+        margin-bottom: 0px;
+    }
+
+    #heading,
+    header,
+    section {
+        padding: 30px 15px 50px;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .profile-image {
+        margin: -110px 0;
+    }
+
+    .name {
+        text-align: right;
+    }
+
+    h1 {
+        font-size: 46px;
+    }
+}

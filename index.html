@@ -4,51 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John McPhedran - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            
-            <div class="logo">
+<body>      
+    <section id="heading">
+        <div class="container">
+            <h1 class="heading-white">Aspiring Web Developer</h1>
+            <p>After years in marketing tech, <br>
+             I’ve found my real interest lies in development—and I’m all in.</p>
+        </div>
+    </section>
+    
+    <header>
+        
+        <div class="container">
+            <!-- <div class="logo">
                 <span>JM</span>
+            </div> -->
+
+            <div class="col-flex">
+                <div class="col-50">
+                    
+                    <img  class="profile-image" src="img/john-mcphedran-profile-image.jpg" alt="Profile image of John McPhedran">
+                
+                    <h2 class="name heading-white">John McPhedran</h2>
+                
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Skills</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-50"></div>
             </div>
             
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            
-            <img src="img/john-mcphedran-profile-image.jpg" alt="Profile image of John McPhedran">
-            
-            <h1>John McPhedran</h1>
-            
-            <p>Aspiring Web Developer</p>
+        </div>
 
-            <p>After years in marketing tech, I’ve found my real interest lies in development—and I’m all in.</p>
+    </header>
 
-        </header>
-
-        <main>   
+    <main>   
+        <div class="container">
             <section id="about">
-
                 <h2>About Me</h2>
-
-                <div>&#x1F44B;</div>
-
-                <h3>Hi, I’m John McPhedran from New Zealand.</h3>
-
-                <p>I built my first WordPress site in 2010 and quickly became fascinated by the world of online marketing and the technology behind it. Since then, I’ve continued to grow my skills through self-study and a range of courses in web development, digital marketing, and e-commerce.</p>
-
-                <p>I’ve been working professionally in marketing technology since 2013, but over time, I’ve found the programming and development side of my work to be the most interesting. That’s led me to actively pursue more opportunities in web development.</p>
-
+                <div class="col-flex">
+                    <div id="intro" class="col-50">
+                        <div class="flex intro-heading">
+                            <span>&#x1F44B;</span>
+                            <h3>Hi, I’m John McPhedran from New Zealand.</h3>
+                        </div>
+                        <p>I built my first WordPress site in 2010 and quickly became fascinated by the world of online marketing and the technology behind it. Since then, I’ve continued to grow my skills through self-study and a range of courses in web development, digital marketing, and e-commerce.</p>
+                        <p>I’ve been working professionally in marketing technology since 2013, but over time, I’ve found the programming and development side of my work to be the most interesting. That’s led me to actively pursue more opportunities in web development.</p>
+                    </div>
+                    <div id="contact" class="col-50">
+                        <ul>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-briefcase"></i>
+                                <span>Motivierter Bewerber</span>
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-address-book"></i>
+                                <span>Wilhelmshavener Str. 14<br>
+                                24105 Kiel </span>
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-phone"></i>
+                                <a href="">0157 5270 3777</a>
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="far fa-envelope"></i>
+                                <a href="">john@sitewideweb.com</a>
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-globe"></i>
+                                <a href="">sitewideweb.com</a>
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fab fa-linkedin"></i>
+                                <a href="">John McPhedran</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
-        </main>
-    </div>    
+        </div>
+    </main>    
 </body>
 </html>
