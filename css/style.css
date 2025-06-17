@@ -3,43 +3,44 @@ BASE STYLES
 ****************************************/
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #545454;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #545454;
 }
 
 h1, h2, h3 {
-  font-family: "Varela Round", sans-serif;
-  font-weight: 500;
-  color: #40475D;
+	font-family: "Varela Round", sans-serif;
+	font-weight: 500;
+	color: #40475D;
 }
 
 h1, h2 {
-  font-size: 32px;
-  text-align: center;
+	font-size: 32px;
+	text-align: center;
 }
 
-h3:not(#about h3),
-h2 + p {
-  text-align: center;
+h2 + p,
+.copyright,
+#skills {
+	text-align: center;
 }
 
 i {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 ul {
-  padding-left: 0;
+	padding-left: 0;
 }
 
 a {
-  color: #FF4814;
-  text-decoration: none;
+	color: #FF4814;
+	text-decoration: none;
 }
 
 a:hover {
-  color: #FF7345;
+	color: #FF7345;
 }
 
 
@@ -49,36 +50,36 @@ LAYOUT
 
 .flex,
 #about li {
-  display: flex;
+	display: flex;
 }
 
 .intro-heading,
 #about li {
-  align-items: center;
+	align-items: center;
 }
 
 .intro-heading h3,
 #about li span,
 #about li a {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 section {
-  padding: 15px;
+	padding: 15px;
 }
 
 .profile-image {
-  display: block;
-  margin: -50px auto 0;
-  width: 200px;
-  border: 5px solid #fff;
-  border-radius: 100px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	display: block;
+	margin: -50px auto 0;
+	width: 200px;
+	border: 5px solid #fff;
+	border-radius: 100px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -87,41 +88,41 @@ HEADER & NAV
 ****************************************/
 
 header {
-  background-color: #6699C2;
-  color: #fff;
-  padding: 15px 15px 30px;
+	background-color: #6699C2;
+	color: #fff;
+	padding: 15px 15px 30px;
 }
 
 #heading {
-  background-color: #1D4E89;
-  color: #fff;
-  text-align: center;
-  padding: 15px 15px 30px;
+	background-color: #1D4E89;
+	color: #fff;
+	text-align: center;
+	padding: 15px 15px 30px;
 }
 
 .heading-white {
-  color: #fff;
+	color: #fff;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 nav li {
-  list-style: none;
-  margin: 15px 0;
+	list-style: none;
+	margin: 15px 0;
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 15px 5px;
-  border-bottom: 3px solid transparent;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 5px;
+	border-bottom: 3px solid transparent;
 }
 
 nav a:hover {
-  border-bottom-color: #fff;
+	border-bottom-color: #fff;
 }
 
 
@@ -130,37 +131,37 @@ CONTACT FORM
 ****************************************/
 
 .contact-form {
-  margin: 50px 0;
+	margin: 50px 0;
 }
 
 .form-group {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 input,
 textarea {
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #40475D;
-  border-radius: 4px;
-  font-family: inherit;
-  font-size: 16px;
-  box-sizing: border-box;
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #40475D;
+	border-radius: 4px;
+	font-family: inherit;
+	font-size: 16px;
+	box-sizing: border-box;
 }
 
 button {
-  width: 100%;
-  background-color: #FF4814;
-  color: #fff;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
+	width: 100%;
+	background-color: #FF4814;
+	color: #fff;
+	padding: 15px 20px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
 }
 
 button:hover {
-  background-color: #FF7345;
+	background-color: #FF7345;
 }
 
 
@@ -169,22 +170,37 @@ ABOUT SECTION
 ****************************************/
 
 #intro {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 #about li {
-  margin-bottom: 10px;
-  list-style: none;
+	margin-bottom: 10px;
+	list-style: none;
 }
 
 #about ul a {
-  color: #545454;
-  text-decoration: none;
+	color: #545454;
+	text-decoration: none;
 }
 
 #about ul li:hover,
 #about ul a:hover {
-  color: #FF7345;
+	color: #FF7345;
+}
+
+
+/****************************************
+SKILLS & TECHNOLOGIES SECTION
+****************************************/
+
+#skills div:not(.skills-grid) {
+	border: 1px solid #000;
+}
+
+.skills-grid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr; /* Default 1 column (mobile) */
 }
 
 
@@ -193,66 +209,74 @@ MEDIA QUERIES
 ****************************************/
 
 @media (min-width: 767px) {
-  nav ul,
-  .col-flex:not(header .col-flex) {
-    display: flex;
-  }
+	nav ul,
+	.col-flex:not(header .col-flex) {
+		display: flex;
+	}
 
-  .col-flex {
-    flex-direction: row-reverse;
-    gap: 20px;
-  }
+	.col-flex {
+		flex-direction: row-reverse;
+		gap: 20px;
+	}
 
-  .col-50:not(header .col-50) {
-    width: 50%;
-  }
+	.col-50:not(header .col-50) {
+		width: 50%;
+	}
 
-  h1,
-  h2:not(.name) {
-    font-size: 38px;
-  }
+	h1,
+	h2:not(.name) {
+		font-size: 38px;
+	}
 
-  .name {
-    margin-bottom: 0;
-  }
+	.name {
+		margin-bottom: 0;
+	}
+
+	.skills-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media (min-width: 1024px) {
-  header .flex {
-    display: flex;
-  }
+	header .flex {
+		display: flex;
+	}
 
-  header .col-50 {
-    width: 50%;
-  }
+	header .col-50 {
+		width: 50%;
+	}
 
-  #intro {
-    margin-bottom: 0;
-  }
+	#intro {
+		margin-bottom: 0;
+	}
 
-  #heading,
-  header,
-  section {
-    padding: 30px 15px 50px;
-  }
+	#heading,
+	header,
+	section {
+		padding: 30px 15px 50px;
+	}
 
-  nav {
-    justify-content: flex-end;
-  }
+	nav {
+		justify-content: flex-end;
+	}
 
-  nav a {
-    font-size: 13px;
-  }
+	nav a {
+		font-size: 13px;
+	}
 
-  .profile-image {
-    margin: -110px 0;
-  }
+	.profile-image {
+		margin: -110px 0;
+	}
 
-  .name {
-    text-align: right;
-  }
+	.name {
+		text-align: right;
+	}
 
-  h1 {
-    font-size: 46px;
-  }
+	h1 {
+		font-size: 46px;
+	}
+
+	.skills-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
